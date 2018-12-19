@@ -7,17 +7,17 @@
   
   <title>hexo的安装流程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源npm config set registry http://registry.npm.taobao.org/ 5.hexo下载bloghexo init 6.安装依赖npm install 7.安装hexo-deploy">
+  <meta name="description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源 npm config set registry http://registry.npm.taobao.org/  5.hexo下载blog hexo init  6.安装依赖 npm install  7.安装hexo-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo的安装流程">
 <meta property="og:url" content="http://yoursite.com/2018/12/19/hexo的安装流程/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源npm config set registry http://registry.npm.taobao.org/ 5.hexo下载bloghexo init 6.安装依赖npm install 7.安装hexo-deploy">
+<meta property="og:description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源 npm config set registry http://registry.npm.taobao.org/  5.hexo下载blog hexo init  6.安装依赖 npm install  7.安装hexo-">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-19T13:04:30.803Z">
+<meta property="og:updated_time" content="2018-12-19T13:34:11.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo的安装流程">
-<meta name="twitter:description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源npm config set registry http://registry.npm.taobao.org/ 5.hexo下载bloghexo init 6.安装依赖npm install 7.安装hexo-deploy">
+<meta name="twitter:description" content="git安装hexo博客1.github创建一个远程仓库2.安装hexo工具 npm install hexo -g  3.测试是否安装成功 hexo -v  4.设置npm镜像源 npm config set registry http://registry.npm.taobao.org/  5.hexo下载blog hexo init  6.安装依赖 npm install  7.安装hexo-">
   
     <link rel="alternate" href="/blog.github.io/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -92,10 +92,18 @@
 <h2 id="3-测试是否安装成功"><a href="#3-测试是否安装成功" class="headerlink" title="3.测试是否安装成功"></a>3.测试是否安装成功</h2><blockquote>
 <p>hexo -v</p>
 </blockquote>
-<h2 id="4-设置npm镜像源"><a href="#4-设置npm镜像源" class="headerlink" title="4.设置npm镜像源"></a>4.设置npm镜像源</h2><p>npm config set registry <a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></p>
-<h2 id="5-hexo下载blog"><a href="#5-hexo下载blog" class="headerlink" title="5.hexo下载blog"></a>5.hexo下载blog</h2><p>hexo init</p>
-<h2 id="6-安装依赖"><a href="#6-安装依赖" class="headerlink" title="6.安装依赖"></a>6.安装依赖</h2><p>npm install</p>
-<h2 id="7-安装hexo-deployer-git"><a href="#7-安装hexo-deployer-git" class="headerlink" title="7.安装hexo-deployer-git"></a>7.安装hexo-deployer-git</h2><p>npm install hexo-deployer-git –save</p>
+<h2 id="4-设置npm镜像源"><a href="#4-设置npm镜像源" class="headerlink" title="4.设置npm镜像源"></a>4.设置npm镜像源</h2><blockquote>
+<p>npm config set registry <a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></p>
+</blockquote>
+<h2 id="5-hexo下载blog"><a href="#5-hexo下载blog" class="headerlink" title="5.hexo下载blog"></a>5.hexo下载blog</h2><blockquote>
+<p>hexo init</p>
+</blockquote>
+<h2 id="6-安装依赖"><a href="#6-安装依赖" class="headerlink" title="6.安装依赖"></a>6.安装依赖</h2><blockquote>
+<p>npm install</p>
+</blockquote>
+<h2 id="7-安装hexo-deployer-git"><a href="#7-安装hexo-deployer-git" class="headerlink" title="7.安装hexo-deployer-git"></a>7.安装hexo-deployer-git</h2><blockquote>
+<p>npm install hexo-deployer-git –save</p>
+</blockquote>
 <h2 id="8-上传代码"><a href="#8-上传代码" class="headerlink" title="8.上传代码"></a>8.上传代码</h2><h3 id="8-1-配置"><a href="#8-1-配置" class="headerlink" title="8.1 配置"></a>8.1 配置</h3><p>1）_config.yml文件<br>    deploy:<br>        type: git<br>        repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:hjyl-cheng/myblog.git<br>        branch: gh-pages<br>2）SSH 无密码上传</p>
 <ol>
 <li>ssh-keygen, 直接将这个文件的目录添加到path中去。</li>
@@ -106,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/19/hexo的安装流程/" data-id="cjpv7tziz0001nku83fhy5tp7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/19/hexo的安装流程/" data-id="cjpv7xr2q0001ggu8xgw9t48t" class="article-share-link">Share</a>
       
       
     </footer>
